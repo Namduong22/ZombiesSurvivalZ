@@ -28,6 +28,11 @@ public class Bullet : MonoBehaviour
 			healthController.TakeDamage(10);
 			Destroy(gameObject);
 		}
+
+		if (collision.GetComponent<Wall>())
+		{
+			Destroy(gameObject); 
+		}
 	}
 
 	private void DestroyWhenOffScreen()
