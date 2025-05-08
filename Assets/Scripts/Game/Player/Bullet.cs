@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
 
 	AudioManager audioManager;
 
+	[SerializeField] private float bulletDamage;
+
 	private void Awake()
 	{
 		_camera = Camera.main;
@@ -25,7 +27,7 @@ public class Bullet : MonoBehaviour
 		{
 			audioManager.PlaySFX(audioManager.zombiesHurt);
 			HealthController healthController = collision.GetComponent<HealthController>();
-			healthController.TakeDamage(10);
+			healthController.TakeDamage(bulletDamage);
 			Destroy(gameObject);
 		}
 

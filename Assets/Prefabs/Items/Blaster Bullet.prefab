@@ -60,33 +60,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6712150627840300802, guid: 6524ef841a1030d4a8942759d442d51e, type: 3}
+      propertyPath: bulletDamage
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7295875049307675150, guid: 6524ef841a1030d4a8942759d442d51e, type: 3}
       propertyPath: m_Name
       value: Blaster Bullet
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6712150627840300802, guid: 6524ef841a1030d4a8942759d442d51e, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7295875049307675150, guid: 6524ef841a1030d4a8942759d442d51e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3266304554944175034}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6524ef841a1030d4a8942759d442d51e, type: 3}
---- !u!1 &6488846410831886009 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7295875049307675150, guid: 6524ef841a1030d4a8942759d442d51e, type: 3}
-  m_PrefabInstance: {fileID: 4561342532829408439}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3266304554944175034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6488846410831886009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81ec2e24bf7b3d044a81ec41017e3459, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
