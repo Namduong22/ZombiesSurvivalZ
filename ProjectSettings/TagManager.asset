@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Audio
+  - Explosion
   layers:
   - Default
   - TransparentFX
@@ -59,4 +60,7 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 2621439275
+    locked: 0
+  - name: Explosion
+    uniqueID: 3627994401
     locked: 0

@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: _currentHealth
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 544169121541386953, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
+      propertyPath: _maximumHealth
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1250891356748590058, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

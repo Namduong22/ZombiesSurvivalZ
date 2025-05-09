@@ -10,13 +10,13 @@ public class HealthController : MonoBehaviour
     public float _currentHealth;
 
     [SerializeField]
-    private float _maxiumHealth;
+    private float _maximumHealth;
 
     public float RemainingHealthPercentage
     {
         get
         {
-            return _currentHealth / _maxiumHealth;
+            return _currentHealth / _maximumHealth;
         }
     }
 
@@ -61,7 +61,7 @@ public class HealthController : MonoBehaviour
 
     public void AddHealth(float amountToAdd)
     {
-        if (_currentHealth == _maxiumHealth)
+        if (_currentHealth == _maximumHealth)
         {
             return;
         }
@@ -70,9 +70,9 @@ public class HealthController : MonoBehaviour
 
         OnHealthChanged?.Invoke();
 
-        if (_currentHealth >=  _maxiumHealth)
+        if (_currentHealth >=  _maximumHealth)
         {
-            _currentHealth = _maxiumHealth;
+            _currentHealth = _maximumHealth;
         }
     }
 }

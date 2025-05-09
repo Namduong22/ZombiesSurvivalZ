@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: _currentHealth
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 6615505406582777903, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
+      propertyPath: _maximumHealth
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7884129333687621498, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
       propertyPath: _speed
       value: 2.5
