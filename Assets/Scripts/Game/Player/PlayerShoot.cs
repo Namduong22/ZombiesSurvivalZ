@@ -63,6 +63,12 @@ public class PlayerShoot : MonoBehaviour
             _fireSingle = true;
         }
     }
+
+    public void PlayerDeathSFX()
+    {
+		audioManager.PlaySFX(audioManager.playerDeath);
+	}
+
 	public void SetBulletPrefab(GameObject newBulletPrefab)
 	{
 		_bulletPrefab = newBulletPrefab;
