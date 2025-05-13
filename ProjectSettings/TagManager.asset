@@ -40,14 +40,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 1607954229
     locked: 0
+  - name: Floor
+    uniqueID: 1728341283
+    locked: 0
+  - name: Object
+    uniqueID: 1470181413
+    locked: 0
   - name: Wall
     uniqueID: 1095578605
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Collectable
     uniqueID: 2852961687
