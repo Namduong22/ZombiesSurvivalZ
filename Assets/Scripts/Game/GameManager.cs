@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private SceneController _sceneController;
-   public void OnPlayerDied()
+
+    public void OnPlayerDied()
     {
         Invoke(nameof(EndGame), _timeToWaitBeforeExit);
     }
