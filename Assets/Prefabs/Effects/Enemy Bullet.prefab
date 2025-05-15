@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1052132752191720867}
   - component: {fileID: 8697823510363626966}
   - component: {fileID: 1149123320625498586}
-  - component: {fileID: -6020811582825997351}
+  - component: {fileID: 4172886978853666240}
   m_Layer: 0
   m_Name: Enemy Bullet
   m_TagString: EnemyBullet
@@ -143,7 +143,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-6020811582825997351
+--- !u!114 &4172886978853666240
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
