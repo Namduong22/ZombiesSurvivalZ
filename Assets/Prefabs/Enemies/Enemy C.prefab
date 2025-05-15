@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542560667197181340, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
       propertyPath: _speed
-      value: 1.6
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 3631494445379794723, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
       propertyPath: _changeOfCollectableDrop

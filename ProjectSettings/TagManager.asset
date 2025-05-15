@@ -7,6 +7,8 @@ TagManager:
   - Audio
   - Explosion
   - Energy
+  - EnemyBullet
+  - Key
   layers:
   - Default
   - TransparentFX
@@ -71,6 +73,6 @@ TagManager:
   - name: Explosion
     uniqueID: 3627994401
     locked: 0
-  - name: New Layer 10
+  - name: Energy
     uniqueID: 45159687
     locked: 0

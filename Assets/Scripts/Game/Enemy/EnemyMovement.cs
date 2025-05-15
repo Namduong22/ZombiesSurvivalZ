@@ -94,45 +94,45 @@ public class EnemyMovement : MonoBehaviour
 		}
 	}
 
-    private void HandleObstacles() 
-    {
-        _obstacleAvoidanceCooldown -= Time.deltaTime;
+	private void HandleObstacles()
+	{
+		_obstacleAvoidanceCooldown -= Time.deltaTime;
 
-        var contactFilter = new ContactFilter2D();
-        contactFilter.SetLayerMask(_obstacleLayerMask);
+		var contactFilter = new ContactFilter2D();
+		contactFilter.SetLayerMask(_obstacleLayerMask);
 
-        int numberOfCollisions = Physics2D.CircleCast(
-            transform.position,
-            _obstacleCheckCircleRadius,
-            transform.up,
-            contactFilter,
-            _obstacleCollisions,
-            _obstacleCheckDistance);
+		int numberOfCollisions = Physics2D.CircleCast(
+			transform.position,
+			_obstacleCheckCircleRadius,
+			transform.up,
+			contactFilter,
+			_obstacleCollisions,
+			_obstacleCheckDistance);
 
-        for (int index = 0; index < numberOfCollisions; index++)
-        {
-            var obstacleCollision = _obstacleCollisions[index];
+		for (int index = 0; index < numberOfCollisions; index++)
+		{
+			var obstacleCollision = _obstacleCollisions[index];
 
-            if (obstacleCollision.collider.gameObject == gameObject)
-            {
-                continue;
-            }
+			if (obstacleCollision.collider.gameObject == gameObject)
+			{
+				continue;
+			}
 
-            if (_obstacleAvoidanceCooldown <= 0)
-            {
-                _obstacleAvoidanceTargetDirection = obstacleCollision.normal;
-                _obstacleAvoidanceCooldown = 0.5f;
-            }
+			if (_obstacleAvoidanceCooldown <= 0)
+			{
+				_obstacleAvoidanceTargetDirection = obstacleCollision.normal;
+				_obstacleAvoidanceCooldown = 0.5f;
+			}
 
-            var targetRotation = Quaternion.LookRotation(transform.forward, _obstacleAvoidanceTargetDirection);
-            var rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
+			var targetRotation = Quaternion.LookRotation(transform.forward, _obstacleAvoidanceTargetDirection);
+			var rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
 
-            _targetDirection = rotation * Vector2.up;
-            break;
-        }
-    }
-    
-    private void RotateTowardsTarget()
+			_targetDirection = rotation * Vector2.up;
+			break;
+		}
+	}
+
+	private void RotateTowardsTarget()
     {
 
         Quaternion targetRotation = Quaternion.LookRotation(transform.forward, _targetDirection);

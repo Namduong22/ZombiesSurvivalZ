@@ -166,7 +166,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1491,6 +1491,7 @@ MonoBehaviour:
   bgm: {fileID: 8300000, guid: ae866a4cc7e0a3745ade42fcfa41a2fd, type: 3}
   ingameBGM: {fileID: 8300000, guid: 76b1e656733a7de48ab607eca08eecc5, type: 3}
   gunshot: {fileID: 8300000, guid: b9880dff42da15d489aa1750461ceb73, type: 3}
+  laserShot: {fileID: 0}
   playerHurt: {fileID: 8300000, guid: 84b85a6f93aa58b4c814398161e5b733, type: 3}
   playerDeath: {fileID: 8300000, guid: 377d9413eb054e842ae4386b999d1b4f, type: 3}
   zombiesHurt: {fileID: 8300000, guid: fef858d1f3fbe66489d1ccb6f7b857a0, type: 3}
@@ -1498,6 +1499,7 @@ MonoBehaviour:
   weaponEquip: {fileID: 8300000, guid: db31c572560c45e439c50944a0b3ea23, type: 3}
   healthPickup: {fileID: 8300000, guid: f00191fde4c4fb54385e1ca003e9643e, type: 3}
   invinciblePickup: {fileID: 8300000, guid: ee00d54832215d34baffdf15893cc6ed, type: 3}
+  energyPickup: {fileID: 8300000, guid: 2dd2126cbc537dc4496bf950cd1deccf, type: 3}
 --- !u!4 &1076984683
 Transform:
   m_ObjectHideFlags: 0

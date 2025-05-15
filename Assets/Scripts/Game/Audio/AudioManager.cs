@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
 	public AudioClip bgm;
 	public AudioClip ingameBGM;
 	public AudioClip gunshot;
+	public AudioClip laserShot;
 	public AudioClip playerHurt;
 	public AudioClip playerDeath;
 	public AudioClip zombiesHurt;
@@ -17,6 +18,7 @@ public class AudioManager : MonoBehaviour
 	public AudioClip weaponEquip;
 	public AudioClip healthPickup;
 	public AudioClip invinciblePickup;
+	public AudioClip energyPickup;
 
 
 	private void Start()

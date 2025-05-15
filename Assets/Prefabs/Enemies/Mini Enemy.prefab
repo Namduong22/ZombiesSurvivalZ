@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8652294592899833453
+--- !u!1001 &5575199892994363898
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,23 +10,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1677833932196880770, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1677833932196880770, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
       propertyPath: m_Color.g
-      value: 0.5146283
+      value: 0.96984494
       objectReference: {fileID: 0}
     - target: {fileID: 1677833932196880770, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.27735847
       objectReference: {fileID: 0}
-    - target: {fileID: 3072652110466566488, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
-      propertyPath: _killScore
-      value: 30
+    - target: {fileID: 3665713415361561955, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
+      propertyPath: _playerAwarenessDistance
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4207423834265295471, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
       propertyPath: m_Name
-      value: Enemy D
+      value: Mini Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5557361660821516556, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -69,31 +69,47 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6615505406582777903, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
-      propertyPath: _maxiumHealth
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 6615505406582777903, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
       propertyPath: _currentHealth
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6615505406582777903, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
       propertyPath: _maximumHealth
-      value: 40
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615505406582777903, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
+      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615505406582777903, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
+      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 2556082808534350911}
+    - target: {fileID: 6615505406582777903, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
+      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: RandomlyDropCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615505406582777903, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
+      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: EnemyCollectableDrop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7884129333687621498, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
       propertyPath: _speed
       value: 1.85
       objectReference: {fileID: 0}
-    - target: {fileID: 7937050111267679685, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
-      propertyPath: _changeOfCollectableDrop
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8409668382409631872, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
-      propertyPath: _damageAmount
-      value: 20
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3072652110466566488, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
+--- !u!114 &2556082808534350911 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7937050111267679685, guid: 3a9d4ad6fb9ed724ab6e5f52b71dac57, type: 3}
+  m_PrefabInstance: {fileID: 5575199892994363898}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d1d32bbe90783b49b426a5e03849688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

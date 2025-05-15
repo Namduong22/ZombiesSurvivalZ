@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Energy : MonoBehaviour
+public class Key : MonoBehaviour
 {
 	AudioManager audioManager;
 
@@ -16,6 +16,7 @@ public class Energy : MonoBehaviour
 		if (collision.gameObject.GetComponent<PlayerMovement>())
 		{
 			audioManager.PlaySFX(audioManager.energyPickup);
+			Debug.Log("Win Game");
 			Destroy(gameObject);
 		}
 	}
