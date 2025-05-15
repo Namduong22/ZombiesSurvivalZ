@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Audio
   - Explosion
+  - Energy
   layers:
   - Default
   - TransparentFX
@@ -69,4 +70,7 @@ TagManager:
     locked: 0
   - name: Explosion
     uniqueID: 3627994401
+    locked: 0
+  - name: New Layer 10
+    uniqueID: 45159687
     locked: 0

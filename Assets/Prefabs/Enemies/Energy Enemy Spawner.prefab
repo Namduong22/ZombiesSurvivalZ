@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3815315432696070203
+--- !u!1 &1316919698107362301
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8002009796903455151}
-  - component: {fileID: 2934801391957107941}
+  - component: {fileID: 786498093217963074}
+  - component: {fileID: 7042867467647843820}
   m_Layer: 0
-  m_Name: Enemy Spawner
+  m_Name: Energy Enemy Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8002009796903455151
+--- !u!4 &786498093217963074
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3815315432696070203}
+  m_GameObject: {fileID: 1316919698107362301}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,18 +32,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2934801391957107941
+--- !u!114 &7042867467647843820
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3815315432696070203}
+  m_GameObject: {fileID: 1316919698107362301}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d00c2864f4569d42b67d2743752ee91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 7359018527025135753, guid: 45caee5b067ade44a8a40336c8bbdd1a, type: 3}
-  _minimumSpawnTime: 30
-  _maximumSpawnTime: 35
+  _enemyPrefab: {fileID: 9162946782949664137, guid: fb04f3b1035e8d04395c386f62bf0a3f, type: 3}
+  _minimumSpawnTime: 2
+  _maximumSpawnTime: 5
