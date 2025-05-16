@@ -23,7 +23,7 @@ public class EnemyExploseController : MonoBehaviour
 
 	public void ExploseEnemy()
 	{
-		audioManager.PlaySFX(audioManager.zombiesDeath);
+		audioManager.PlaySFX(audioManager.explosion);
 		CreateExplosion();
 		Destroy(gameObject);
 	}

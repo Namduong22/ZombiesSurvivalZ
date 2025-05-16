@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
 	public AudioClip zombiesHurt;
 	public AudioClip zombiesDeath;
 	public AudioClip weaponEquip;
+	public AudioClip explosion;
 	public AudioClip healthPickup;
 	public AudioClip invinciblePickup;
 	public AudioClip energyPickup;

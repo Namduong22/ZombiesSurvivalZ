@@ -40,6 +40,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.0015961528
       objectReference: {fileID: 0}
+    - target: {fileID: 1393304582288832493, guid: 184a92488f5d9f145bf729c7615932f9, type: 3}
+      propertyPath: _expiryTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2580197821011866162, guid: 184a92488f5d9f145bf729c7615932f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -18,7 +18,7 @@ public class EnergyEnemyDestroyController : MonoBehaviour
 		if (energyPrefabs != null)
 		{
 			GameObject energy = Instantiate(energyPrefabs, transform.position, Quaternion.identity);
-			Destroy(energy, 10f);
+			Destroy(energy, 15f);
 		}
 	}
 
