@@ -11,7 +11,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private SceneController _sceneController;
 
-    public void OnPlayerDied()
+    [SerializeField]
+    private GameObject pauseMenu;
+
+	void Start()
+	{
+		pauseMenu.SetActive(false);
+	}
+
+	public void OnPlayerDied()
     {
         Invoke(nameof(EndGame), _timeToWaitBeforeExit);
     }
@@ -19,5 +27,17 @@ public class GameManager : MonoBehaviour
     private void EndGame()
     {
         _sceneController.LoadScene("Main Menu");
+    }
+
+    public void PauseMenu()
+    {
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void ResumeGame()
+    {
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
     }
 }

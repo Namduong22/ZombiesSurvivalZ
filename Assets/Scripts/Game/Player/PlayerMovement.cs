@@ -14,7 +14,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float _screenBorder;
 
-    private Rigidbody2D _rigidbody;
+    [SerializeField]
+	private GameManager gameManager;
+
+	private Rigidbody2D _rigidbody;
     private Vector2 _movementInput;
     private Vector2 _smoothedMovementInput;
     private Vector2 _movementInputSmoothVelocity;
@@ -27,7 +30,16 @@ public class PlayerMovement : MonoBehaviour
         _camera = Camera.main;
         _animator = GetComponent<Animator>();
     }
-    private void FixedUpdate()
+
+	private void Update()
+	{
+		if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            gameManager.PauseMenu();
+        }
+	}
+
+	private void FixedUpdate()
     {
         SetPlayerVelocity();
         RotateInDirectionOfInput();
