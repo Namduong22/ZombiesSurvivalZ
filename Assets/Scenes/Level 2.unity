@@ -8554,7 +8554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1228183884}
   highScoreText: {fileID: 1544509652}
-  level: 3
+  level: 2
 --- !u!114 &1228183884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9621,7 +9621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1228183884}
   highScoreText: {fileID: 1544509652}
-  level: 3
+  level: 2
 --- !u!114 &1544509652
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7631,7 +7631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2123861819}
   highScoreText: {fileID: 537073975}
-  level: 2
+  level: 4
 --- !u!222 &537073977
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13761,7 +13761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2123861819}
   highScoreText: {fileID: 537073975}
-  level: 2
+  level: 4
 --- !u!114 &2123861819
 MonoBehaviour:
   m_ObjectHideFlags: 0
