@@ -12,6 +12,7 @@ public class BossManager : MonoBehaviour
     private bool bossCalled = false;
     [SerializeField] private Image energyBar;
     [SerializeField] GameObject energyBarUI;
+	[SerializeField] GameObject bossHealthBarUI;
 
 	// Start is called before the first frame update
 	void Start()
@@ -19,6 +20,8 @@ public class BossManager : MonoBehaviour
         currentEnergy = 0;
         UpdateEnergyBar();
 		boss.SetActive(false);
+        bossHealthBarUI.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -45,6 +48,7 @@ public class BossManager : MonoBehaviour
     {
         bossCalled = true;
         boss.SetActive(true);
+        bossHealthBarUI.SetActive(true); 
         enemySpawner.SetActive(false);
         energyBarUI.SetActive(false);
     }
