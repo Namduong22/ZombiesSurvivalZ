@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossManager : MonoBehaviour
 {
-    public int currentEnergy;
+    private int currentEnergy;
     [SerializeField] private int energyThreshold;
     [SerializeField] private GameObject boss;
     [SerializeField] private GameObject enemySpawner; 
     private bool bossCalled = false;
+    [SerializeField] private Image energyBar;
+    [SerializeField] GameObject energyBarUI;
 
 	// Start is called before the first frame update
 	void Start()
     {
-        boss.SetActive(false);
+        currentEnergy = 0;
+        UpdateEnergyBar();
+		boss.SetActive(false);
     }
 
     // Update is called once per frame
@@ -29,7 +34,8 @@ public class BossManager : MonoBehaviour
             return;
         }
         currentEnergy += 1;
-        if (currentEnergy == energyThreshold) 
+        UpdateEnergyBar();
+		if (currentEnergy == energyThreshold) 
         {
             CallBoss();
         }
@@ -40,5 +46,15 @@ public class BossManager : MonoBehaviour
         bossCalled = true;
         boss.SetActive(true);
         enemySpawner.SetActive(false);
+        energyBarUI.SetActive(false);
+    }
+
+    private void UpdateEnergyBar()
+    {
+        if (energyBar != null )
+        {
+			float fillAmount = Mathf.Clamp01((float)currentEnergy / (float)energyThreshold);
+			energyBar.fillAmount = fillAmount;
+		}
     }
 }
