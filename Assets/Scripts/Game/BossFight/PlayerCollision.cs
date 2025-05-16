@@ -18,7 +18,7 @@ public class PlayerCollision : MonoBehaviour
 		if (collision.CompareTag("Key"))
 		{
 			audioManager.PlaySFX(audioManager.energyPickup);
-			Debug.Log("Win Game");
+			bossManager.WinGame();
 			Destroy(collision.gameObject);
 		}
 		else if (collision.CompareTag("Energy")) 

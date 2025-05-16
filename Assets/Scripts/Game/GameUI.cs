@@ -15,5 +15,6 @@ public class GameUI : MonoBehaviour
     public void LoadMainMenu()
     {
 		SceneManager.LoadScene("Main Menu");
+        Time.timeScale = 1;
 	}
 }

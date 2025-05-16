@@ -13,6 +13,7 @@ public class BossManager : MonoBehaviour
     [SerializeField] private Image energyBar;
     [SerializeField] GameObject energyBarUI;
 	[SerializeField] GameObject bossHealthBarUI;
+	[SerializeField] private GameObject winMenu;
 
 	// Start is called before the first frame update
 	void Start()
@@ -21,6 +22,7 @@ public class BossManager : MonoBehaviour
         UpdateEnergyBar();
 		boss.SetActive(false);
         bossHealthBarUI.SetActive(false);
+        winMenu.SetActive(false);
 
     }
 
@@ -60,5 +62,11 @@ public class BossManager : MonoBehaviour
 			float fillAmount = Mathf.Clamp01((float)currentEnergy / (float)energyThreshold);
 			energyBar.fillAmount = fillAmount;
 		}
+    }
+
+    public void WinGame()
+    {
+        winMenu.SetActive(true);
+        Time.timeScale = 0;
     }
 }
