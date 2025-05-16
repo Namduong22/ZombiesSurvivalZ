@@ -23,7 +23,7 @@ public class LevelMenu : MonoBehaviour
 		_sceneController.LoadScene("Level 3");
 	}
 
-	public void LoadLevel4()
+	public void LoadBossLevel()
 	{
 		_sceneController.LoadScene("Boss Level");
 	}

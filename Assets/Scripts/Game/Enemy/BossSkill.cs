@@ -9,7 +9,7 @@ public class BossSkill : MonoBehaviour
 	[SerializeField] private Transform firePoint;
     [SerializeField] private float bulletSpeed;
     [SerializeField] private float circleBulletSpeed;
-    //[SerializeField] private float hpValue;
+    [SerializeField] private float hpValue;
     [SerializeField] private GameObject miniEnemy;
     [SerializeField] private float skillCoolDown;
     private float nextSkillTime = 0f;
@@ -56,12 +56,12 @@ public class BossSkill : MonoBehaviour
         }
     }
 
-    /*private void Heal() 
+    private void Heal() 
     {
         audioManager.PlaySFX(audioManager.healthPickup);
 		HealthController healthController = GetComponent<HealthController>();
 		healthController.AddHealth(hpValue);
-	}*/
+	}
 
 	private void SpawnEnemy()
 	{
@@ -78,7 +78,7 @@ public class BossSkill : MonoBehaviour
 
 	private void RandomSkill()
 	{
-		int randomSkill = Random.Range(0, 6);
+		int randomSkill = Random.Range(0, 7);
         switch (randomSkill)
         {
             case 0:
@@ -98,6 +98,9 @@ public class BossSkill : MonoBehaviour
                 break;
             case 5:
                 Teleport();
+                break;
+            case 6:
+                Heal();
                 break;
         }
 	}
