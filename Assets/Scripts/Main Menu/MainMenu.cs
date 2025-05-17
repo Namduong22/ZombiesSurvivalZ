@@ -8,15 +8,38 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private SceneController _sceneController;
 
+	[SerializeField]
+	private GameObject mainMenu;
 
-    public void Play()
+	[SerializeField]
+	private GameObject optionMenu;
+
+	private void Start()
+	{
+		mainMenu.SetActive(true);
+		optionMenu.SetActive(false);
+	}
+
+	public void Play()
     {
         _sceneController.LoadScene("Level Menu");
     }
+
+	public void Options()
+	{
+		mainMenu.SetActive(false);
+		optionMenu.SetActive(true);
+	}
 
     public void Exit()
     {
         Application.Quit();
     }
+
+	public void BackToMainMenu()
+	{
+		mainMenu.SetActive(true);
+		optionMenu.SetActive(false);
+	}
 
 }
