@@ -38,7 +38,11 @@ public class BossManager : MonoBehaviour
         {
             return;
         }
-        currentEnergy += 1;
+		if (currentEnergy == energyThreshold)
+		{
+			return;
+		}
+		currentEnergy += 1;
         UpdateEnergyBar();
 		if (currentEnergy == energyThreshold) 
         {
