@@ -11825,8 +11825,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2689b693ca5f3934b91919190ab23cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentHealth: 150
-  _maximumHealth: 150
+  _currentHealth: 200
+  _maximumHealth: 200
   OnDied:
     m_PersistentCalls:
       m_Calls:
@@ -13269,8 +13269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2689b693ca5f3934b91919190ab23cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentHealth: 400
-  _maximumHealth: 400
+  _currentHealth: 350
+  _maximumHealth: 350
   OnDied:
     m_PersistentCalls:
       m_Calls:
@@ -13441,7 +13441,7 @@ MonoBehaviour:
   firePoint: {fileID: 297253774}
   bulletSpeed: 15
   circleBulletSpeed: 10
-  hpValue: 0
+  hpValue: 10
   miniEnemy: {fileID: 8591974653706931093, guid: f555fbee79c416740be4cd203498bfcc, type: 3}
   skillCoolDown: 3
 --- !u!114 &1886376871

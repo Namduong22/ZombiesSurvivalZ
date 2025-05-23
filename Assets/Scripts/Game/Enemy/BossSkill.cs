@@ -94,12 +94,15 @@ public class BossSkill : MonoBehaviour
                 ShotCircleBullet();
                 break;
             case 4:
-                SpawnEnemy();
+                Heal();
                 break;
             case 5:
-                Teleport();
+                SpawnEnemy();
                 break;
             case 6:
+                Teleport();
+                break;
+            case 7:
                 Heal();
                 break;
         }
