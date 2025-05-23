@@ -13504,7 +13504,7 @@ MonoBehaviour:
   firePoint: {fileID: 297253774}
   bulletSpeed: 15
   circleBulletSpeed: 10
-  hpValue: 10
+  hpValue: 15
   miniEnemy: {fileID: 8591974653706931093, guid: f555fbee79c416740be4cd203498bfcc, type: 3}
   skillCoolDown: 3
 --- !u!114 &1886376871
