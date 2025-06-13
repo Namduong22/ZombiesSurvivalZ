@@ -5,7 +5,6 @@ using UnityEngine;
 public class BossSkill : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefabs;
-	[SerializeField] private GameObject player;
 	[SerializeField] private Transform firePoint;
     [SerializeField] private float bulletSpeed;
     [SerializeField] private float circleBulletSpeed;
@@ -14,10 +13,13 @@ public class BossSkill : MonoBehaviour
     [SerializeField] private float skillCoolDown;
     private float nextSkillTime = 0f;
 
-    AudioManager audioManager;
+	private PlayerMovement player;
+
+	AudioManager audioManager;
 	private void Awake()
 	{
 		audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+		player = FindObjectOfType<PlayerMovement>();
 	}
 
 	private void Update()
@@ -101,9 +103,6 @@ public class BossSkill : MonoBehaviour
                 break;
             case 6:
                 Teleport();
-                break;
-            case 7:
-                Heal();
                 break;
         }
 	}
