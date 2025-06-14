@@ -235,7 +235,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 3846056603319079038, guid: 1a4d11518ae272d448fb684f7135cdf6, type: 2}
-  m_audioClip: {fileID: 8300000, guid: f32bdedbb44db6445854f7ba26d4c0d5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ae866a4cc7e0a3745ade42fcfa41a2fd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -987,8 +987,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278891137
-  m_fontColor: {r: 0.50672203, g: 0.6981132, b: 0.040833, a: 1}
+    rgba: 4278255608
+  m_fontColor: {r: 0.972549, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1123,8 +1123,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278891137
-  m_fontColor: {r: 0.50672203, g: 0.6981132, b: 0.040833, a: 1}
+    rgba: 4278255608
+  m_fontColor: {r: 0.972549, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1527,8 +1527,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278891137
-  m_fontColor: {r: 0.50672203, g: 0.6981132, b: 0.040833, a: 1}
+    rgba: 4278255608
+  m_fontColor: {r: 0.972549, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1663,7 +1663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aedc5009335453944abdf2ce0834db19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1654567461
+--- !u!1 &1647451458
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1671,8 +1671,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1654567463}
-  - component: {fileID: 1654567462}
+  - component: {fileID: 1647451460}
+  - component: {fileID: 1647451459}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1680,13 +1680,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!212 &1654567462
+--- !u!212 &1647451459
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654567461}
+  m_GameObject: {fileID: 1647451458}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -1721,28 +1721,28 @@ SpriteRenderer:
   m_SortingLayerID: 1607954229
   m_SortingLayer: -4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1545f9fb8ddadd8479c3e40fe334baf5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 651a7ec232677034080591e69f9e22d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 21.6, y: 32.407913}
+  m_Size: {x: 22.857143, y: 11.428572}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1654567463
+--- !u!4 &1647451460
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654567461}
+  m_GameObject: {fileID: 1647451458}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0789, y: 0, z: 0}
-  m_LocalScale: {x: 1.116414, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.93667334, y: 1.0546758, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1813,8 +1813,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278891137
-  m_fontColor: {r: 0.50672203, g: 0.6981132, b: 0.040833, a: 1}
+    rgba: 4278255608
+  m_fontColor: {r: 0.972549, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2080,8 +2080,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278891137
-  m_fontColor: {r: 0.50672203, g: 0.6981132, b: 0.040833, a: 1}
+    rgba: 4278255608
+  m_fontColor: {r: 0.972549, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2153,7 +2153,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1494986102}
-  - {fileID: 1654567463}
+  - {fileID: 1647451460}
   - {fileID: 34593444}
   - {fileID: 495695025}
   - {fileID: 1636745923}
